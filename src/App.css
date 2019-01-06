@@ -23,7 +23,11 @@ body {
   color: #d8dcf2;
   margin: 10px;
   margin-top: 1em;
+<<<<<<< HEAD
   padding: 3px;
+=======
+  padding: 7px;
+>>>>>>> 0afa4451c569a14a93790cf7c768f7fccd365f22
   border: 1px solid white;
   border-radius: 7px;
 }

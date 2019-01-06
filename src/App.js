@@ -93,7 +93,11 @@ class App extends Component {
                     APOD
                   </Typography>
                   <Typography id="text" component="p">
+<<<<<<< HEAD
                     Get the astronomy picture of the day, everyday!
+=======
+                    Get the astronomy picture of the day, every day!
+>>>>>>> 0afa4451c569a14a93790cf7c768f7fccd365f22
                   </Typography>
                 </CardContent>
               </CardActionArea>

@@ -93,6 +93,16 @@ const styles = theme => ({
   iconGit: {
     height: 30,
     width: "auto"
+<<<<<<< HEAD
+=======
+  },
+  linkTexts: {
+    color: '#d8dcf2',
+    '&:hover': {
+      color: "white"
+    },
+    textDecoration: 'none',
+>>>>>>> 0afa4451c569a14a93790cf7c768f7fccd365f22
   }
 });
 
@@ -189,12 +199,20 @@ class About extends Component {
               <br />
               <br />
               Personal Website:{" "}
+<<<<<<< HEAD
               <a
+=======
+              <a className={classes.linkTexts}
+>>>>>>> 0afa4451c569a14a93790cf7c768f7fccd365f22
                 href="http://tansuisikli.space"
                 rel="noopener noreferrer"
                 target="_blank"
               >
+<<<<<<< HEAD
                 http://tansuisikli.space
+=======
+                tansuisikli.space
+>>>>>>> 0afa4451c569a14a93790cf7c768f7fccd365f22
               </a>
             </p>
           </div>
@@ -246,12 +264,20 @@ class About extends Component {
               <br />
               <br />
               Personal Website:{" "}
+<<<<<<< HEAD
               <a
+=======
+              <a className={classes.linkTexts}
+>>>>>>> 0afa4451c569a14a93790cf7c768f7fccd365f22
                 href="http://alicanakyuz.tech"
                 rel="noopener noreferrer"
                 target="_blank"
               >
+<<<<<<< HEAD
                 www.alicanakyuz.tech
+=======
+                alicanakyuz.tech
+>>>>>>> 0afa4451c569a14a93790cf7c768f7fccd365f22
               </a>
             </p>
           </div>
