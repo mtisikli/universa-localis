@@ -185,13 +185,13 @@ class About extends Component {
             </div>
 
             <p id="text" className={classes.text}>
-              Tansu is a full-stack developer based in Izmir, Turkey. He likes
-              using React.js because of its modular, scalable, and flexible
-              structure. He enjoys creating responsive and interactive user
-              interfaces. Tansu studied and wrote his master thesis on
-              twentieth-century electronic music, created Universa Localis and
-              contributed to project Electrony's design and front-end
-              development.
+              Mehmet Tansu Işıklı is a full-stack developer based in Izmir,
+              Turkey. He likes using React.js because of its modular, scalable,
+              and flexible structure. He enjoys creating responsive and
+              interactive user interfaces. Tansu studied and wrote his master
+              thesis on twentieth-century electronic music, created Universa
+              Localis and contributed to project Electrony's design and
+              front-end development.
               <br />
               <br />
               <br />
@@ -244,8 +244,8 @@ class About extends Component {
               </a>
             </div>
             <p id="text" className={classes.text}>
-              Alican is a full-stack developer currently based in Oregon, USA.
-              He works primarily on front-end development with React.js and
+              Alican Akyüz is a full-stack developer currently based in Oregon,
+              USA. He works primarily on front-end development with React.js and
               Material Design, and enjoys solving UX problems. He made
               contributions to the development of Electrony's philosophy,
               design, user interface, and RESTful API that works with Spotify
