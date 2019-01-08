@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import { connect } from "react-redux";
 import IvlForm from "./ivlForm";
 import IvlResult from "../components/ivlResult";
+import Loading from "../../components/loading";
 import Failure from "../../components/failure";
 
 class IvlStatus extends Component {
@@ -16,6 +17,10 @@ class IvlStatus extends Component {
       renderedIvl = (
         <IvlForm errorText="Sorry! There are no pictures available for your criteria." />
       );
+    }
+
+    if (this.props.loading) {
+      renderedIvl = <Loading />;
     }
 
     if (this.props.showResult) {
@@ -34,6 +39,7 @@ const mapStateToProps = state => {
   return {
     default: state.default,
     error: state.error,
+    loading: state.isLoading,
     showResult: state.showResult,
     receivedInfo: state.receivedInfo,
     failure: state.isFailure

@@ -24,9 +24,12 @@ body {
   margin: 10px;
   margin-top: 1em;
   padding: 3px;
-  padding: 7px;
   border: 1px solid white;
   border-radius: 7px;
+}
+
+#buttons:hover {
+  transform: scale(1.1);
 }
 
 .showCase h1 {
@@ -71,6 +74,11 @@ body {
   max-width: 19em;
   height: auto;
   margin-bottom: 8vh;
+  transition: transform 0.2s;
+}
+
+.card:hover {
+  transform: scale(1.1);
 }
 
 .media {
@@ -123,6 +131,10 @@ body {
   float: left;
   padding-top: 17px;
   padding-bottom: 0px;
+}
+
+#link:hover {
+  color: pink;
 }
 
 @media screen and (max-width: 650px) {

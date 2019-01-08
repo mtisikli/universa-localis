@@ -1,5 +1,6 @@
 import {
   SUBMITTED,
+  LOADING,
   FETCH_SUCCESS,
   FETCH_FAILURE,
   SELECT_OPEN,
@@ -18,6 +19,7 @@ import {
 
 export function getApod() {
   return function(dispatch) {
+    dispatch(loading());
     fetch(
       "https://api.nasa.gov/planetary/apod?api_key=1bLpXwhcARlJOhP0k9rQ0PBxWtO7JJRflDIeg16p"
     )
@@ -97,6 +99,7 @@ export function getMrp() {
         if (data.photos.length === 0) {
           dispatch(onError());
         } else {
+          dispatch(loading());
           const received = {
             name: data.photos.map(e => e.rover.name),
             earth_date: data.photos.map(e => e.earth_date),
@@ -151,6 +154,7 @@ export function getIvl() {
         if (data.collection.items.length === 0) {
           dispatch(onError());
         } else {
+          dispatch(loading());
           const received = {
             info: data.collection.items.map(i => i)
           };
@@ -231,6 +235,7 @@ export function techportFetch(receivedIds) {
 
 export function getSpacex() {
   return function(dispatch) {
+    dispatch(loading());
     const flightNumber = Math.floor(Math.random() * 73 + 1);
     console.log(flightNumber);
     fetch(`https://api.spacexdata.com/v3/launches/${flightNumber}`)
@@ -304,6 +309,15 @@ export function submitted() {
   return function(dispatch) {
     dispatch({
       type: SUBMITTED,
+      payload: true
+    });
+  };
+}
+
+export function loading() {
+  return function(dispatch) {
+    dispatch({
+      type: LOADING,
       payload: true
     });
   };

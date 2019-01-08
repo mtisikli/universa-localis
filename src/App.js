@@ -260,7 +260,6 @@ class App extends Component {
 
         {/* FOOTER /////////////////////////////////////////////////////////////////////////////////////////////// */}
         <BottomNavigation showLabels id="footer">
-          <BottomNavigationAction id="link" label="Home" href="/" />
           <BottomNavigationAction id="link" label="About" href="about" />
           <BottomNavigationAction id="link" label="Contact" href="contact" />
           <p id="copyright">© copyright Mehmet Tansu Işıklı</p>

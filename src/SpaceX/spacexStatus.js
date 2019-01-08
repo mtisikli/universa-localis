@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import SpacexResult from "./spacexResult";
+import Loading from "../components/loading";
 import Failure from "../components/failure";
 import { connect } from "react-redux";
 import { getSpacex } from "../actions/formActions/actions";
@@ -11,7 +12,11 @@ export class SpacexStatus extends Component {
   render() {
     let renderedSpacex;
 
-    if (!this.props.default) {
+    if (this.props.loading) {
+      renderedSpacex = <Loading />;
+    }
+
+    if (this.props.showResult) {
       renderedSpacex = <SpacexResult receivedInfo={this.props.receivedInfo} />;
     }
 
@@ -25,9 +30,10 @@ export class SpacexStatus extends Component {
 
 const mapStateToProps = state => {
   return {
-    default: state.default,
-    failure: state.isFailure,
-    receivedInfo: state.receivedInfo
+    loading: state.isLoading,
+    showResult: state.showResult,
+    receivedInfo: state.receivedInfo,
+    failure: state.isFailure
   };
 };
 

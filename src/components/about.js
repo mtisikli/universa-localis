@@ -88,18 +88,24 @@ const styles = theme => ({
     width: "auto",
     position: "relative",
     bottom: 6,
-    marginRight: 10
+    marginRight: 10,
+    "&:hover": {
+      transform: "scale(1.1)"
+    }
   },
   iconGit: {
     height: 30,
-    width: "auto"
+    width: "auto",
+    "&:hover": {
+      transform: "scale(1.1)"
+    }
   },
   linkTexts: {
     color: "#d8dcf2",
+    textDecoration: "none",
     "&:hover": {
-      color: "white"
-    },
-    textDecoration: "none"
+      color: "blue"
+    }
   }
 });
 
@@ -145,131 +151,134 @@ class About extends Component {
               </p>
             </div>
           </Animated>
-          <h1 className={classes.header}>About the Creators</h1>
-          <div id="root" className={classes.root}>
-            <img
-              className={classes.image}
-              src="https://avatars3.githubusercontent.com/u/43027842?s=460&v=4"
-              alt="Tansu"
-            />
-            <div className={classes.icons}>
-              {/* ICON 1 /////////////////////////////////////////////////////////////////////////////////////////////////// */}
+          <Animated animationIn="zoomIn" isVisible={true}>
+            <h1 className={classes.header}>About the Creators</h1>
+          </Animated>
+          <Animated animationIn="fadeInUp" isVisible={true}>
+            <div id="root" className={classes.root}>
+              <img
+                className={classes.image}
+                src="https://avatars3.githubusercontent.com/u/43027842?s=460&v=4"
+                alt="Tansu"
+              />
+              <div className={classes.icons}>
+                {/* ICON 1 /////////////////////////////////////////////////////////////////////////////////////////////////// */}
 
-              <a
-                href="https://www.linkedin.com/in/mehmet-tansu-i%C5%9F%C4%B1kl%C4%B1-5a27b114b/"
-                title="LinkedIn"
-                rel="noopener noreferrer"
-                target="_blank"
-              >
-                <img
-                  className={classes.iconLink}
-                  src="https://www.mentoring.org/new-site/wp-content/uploads/2018/03/linkedin-white-logo-png-14.png"
-                  alt=""
-                />
-              </a>
+                <a
+                  href="https://www.linkedin.com/in/mehmet-tansu-i%C5%9F%C4%B1kl%C4%B1-5a27b114b/"
+                  title="LinkedIn"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                >
+                  <img
+                    className={classes.iconLink}
+                    src="https://www.mentoring.org/new-site/wp-content/uploads/2018/03/linkedin-white-logo-png-14.png"
+                    alt=""
+                  />
+                </a>
 
-              {/* ICON 2 /////////////////////////////////////////////////////////////////////////////////////////////////// */}
+                {/* ICON 2 /////////////////////////////////////////////////////////////////////////////////////////////////// */}
 
-              <a
-                href="https://github.com/mtisikli"
-                title="GitHub"
-                rel="noopener noreferrer"
-                target="_blank"
-              >
-                <img
-                  className={classes.iconGit}
-                  src="https://www.bizzabo.com/hs-fs/hubfs/GitHub_Logo-1.png?width=1000&name=GitHub_Logo-1.png"
-                  alt=""
-                />
-              </a>
+                <a
+                  href="https://github.com/mtisikli"
+                  title="GitHub"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                >
+                  <img
+                    className={classes.iconGit}
+                    src="https://www.bizzabo.com/hs-fs/hubfs/GitHub_Logo-1.png?width=1000&name=GitHub_Logo-1.png"
+                    alt=""
+                  />
+                </a>
+              </div>
+
+              <p id="text" className={classes.text}>
+                Mehmet Tansu Işıklı is a full-stack developer based in Izmir,
+                Turkey. He likes using React.js because of its modular,
+                scalable, and flexible structure. He enjoys creating responsive
+                and interactive user interfaces. Tansu studied and wrote his
+                master thesis on twentieth-century electronic music, created
+                Universa Localis and contributed to project Electrony's design
+                and front-end development.
+                <br />
+                <br />
+                <br />
+                Personal Website:{" "}
+                <a
+                  className={classes.linkTexts}
+                  href="http://tansuisikli.space"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                >
+                  tansuisikli.space
+                </a>
+              </p>
             </div>
+            <div id="root" className={classes.root}>
+              <img
+                className={classes.image}
+                src="https://avatars3.githubusercontent.com/u/42584148?s=460&v=4"
+                alt="Alican"
+              />
+              <div className={classes.icons}>
+                {/* ICON 1 /////////////////////////////////////////////////////////////////////////////////////////////////// */}
 
-            <p id="text" className={classes.text}>
-              Mehmet Tansu Işıklı is a full-stack developer based in Izmir,
-              Turkey. He likes using React.js because of its modular, scalable,
-              and flexible structure. He enjoys creating responsive and
-              interactive user interfaces. Tansu studied and wrote his master
-              thesis on twentieth-century electronic music, created Universa
-              Localis and contributed to project Electrony's design and
-              front-end development.
-              <br />
-              <br />
-              <br />
-              Personal Website:{" "}
-              <a
-                className={classes.linkTexts}
-                href="http://tansuisikli.space"
-                rel="noopener noreferrer"
-                target="_blank"
-              >
-                http://tansuisikli.space tansuisikli.space
-              </a>
-            </p>
-          </div>
-          <div id="root" className={classes.root}>
-            <img
-              className={classes.image}
-              src="https://avatars3.githubusercontent.com/u/42584148?s=460&v=4"
-              alt="Alican"
-            />
-            <div className={classes.icons}>
-              {/* ICON 1 /////////////////////////////////////////////////////////////////////////////////////////////////// */}
+                <a
+                  href="https://www.linkedin.com/in/alican-akyuz-80b67416b/"
+                  title="LinkedIn"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                >
+                  <img
+                    className={classes.iconLink}
+                    src="https://www.mentoring.org/new-site/wp-content/uploads/2018/03/linkedin-white-logo-png-14.png"
+                    alt=""
+                  />
+                </a>
 
-              <a
-                href="https://www.linkedin.com/in/alican-akyuz-80b67416b/"
-                title="LinkedIn"
-                rel="noopener noreferrer"
-                target="_blank"
-              >
-                <img
-                  className={classes.iconLink}
-                  src="https://www.mentoring.org/new-site/wp-content/uploads/2018/03/linkedin-white-logo-png-14.png"
-                  alt=""
-                />
-              </a>
+                {/* ICON 2 /////////////////////////////////////////////////////////////////////////////////////////////////// */}
 
-              {/* ICON 2 /////////////////////////////////////////////////////////////////////////////////////////////////// */}
-
-              <a
-                href="https://github.com/AlicanAkyuz"
-                title="GitHub"
-                rel="noopener noreferrer"
-                target="_blank"
-              >
-                <img
-                  className={classes.iconGit}
-                  src="https://www.bizzabo.com/hs-fs/hubfs/GitHub_Logo-1.png?width=1000&name=GitHub_Logo-1.png"
-                  alt=""
-                />
-              </a>
+                <a
+                  href="https://github.com/AlicanAkyuz"
+                  title="GitHub"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                >
+                  <img
+                    className={classes.iconGit}
+                    src="https://www.bizzabo.com/hs-fs/hubfs/GitHub_Logo-1.png?width=1000&name=GitHub_Logo-1.png"
+                    alt=""
+                  />
+                </a>
+              </div>
+              <p id="text" className={classes.text}>
+                Alican Akyüz is a full-stack developer currently based in
+                Oregon, USA. He works primarily on front-end development with
+                React.js and Material Design, and enjoys solving UX problems. He
+                made contributions to the development of Electrony's philosophy,
+                design, user interface, and RESTful API that works with Spotify
+                Web API and also contributed to Universa Localis.
+                <br />
+                <br />
+                <br />
+                Personal Website:{" "}
+                <a
+                  className={classes.linkTexts}
+                  href="http://alicanakyuz.tech"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                >
+                  alicanakyuz.tech
+                </a>
+              </p>
             </div>
-            <p id="text" className={classes.text}>
-              Alican Akyüz is a full-stack developer currently based in Oregon,
-              USA. He works primarily on front-end development with React.js and
-              Material Design, and enjoys solving UX problems. He made
-              contributions to the development of Electrony's philosophy,
-              design, user interface, and RESTful API that works with Spotify
-              Web API and also contributed to Universa Localis.
-              <br />
-              <br />
-              <br />
-              Personal Website:{" "}
-              <a
-                className={classes.linkTexts}
-                href="http://alicanakyuz.tech"
-                rel="noopener noreferrer"
-                target="_blank"
-              >
-                alicanakyuz.tech
-              </a>
-            </p>
-          </div>
+          </Animated>
         </div>
 
         {/* FOOTER /////////////////////////////////////////////////////////////////////////////////////////////// */}
         <BottomNavigation showLabels id="footer">
           <BottomNavigationAction id="link" label="Home" href="/" />
-          <BottomNavigationAction id="link" label="About" href="about" />
           <BottomNavigationAction id="link" label="Contact" href="contact" />
           <p id="copyright">© copyright Mehmet Tansu Işıklı</p>
         </BottomNavigation>

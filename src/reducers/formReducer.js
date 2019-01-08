@@ -1,5 +1,6 @@
 import {
   SUBMITTED,
+  LOADING,
   FETCH_SUCCESS,
   FETCH_FAILURE,
   SELECT_OPEN,
@@ -43,6 +44,10 @@ function FormReducer(state = initialState, action) {
     case SUBMITTED:
       return Object.assign({}, state, {
         isSubmitted: action.payload
+      });
+    case LOADING:
+      return Object.assign({}, state, {
+        isLoading: action.payload
       });
     case FETCH_SUCCESS:
       return Object.assign({}, state, {

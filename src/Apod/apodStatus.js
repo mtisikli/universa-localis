@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import ApodResult from "./apodResult";
+import Loading from "../components/loading";
 import Failure from "../components/failure";
 import { connect } from "react-redux";
 import { getApod } from "../actions/formActions/actions";
@@ -12,7 +13,11 @@ export class ApodStatus extends Component {
   render() {
     let renderedApod;
 
-    if (!this.props.default) {
+    if (this.props.loading) {
+      renderedApod = <Loading />;
+    }
+
+    if (this.props.showResult) {
       renderedApod = <ApodResult receivedInfo={this.props.receivedInfo} />;
     }
 
@@ -26,7 +31,8 @@ export class ApodStatus extends Component {
 
 const mapStateToProps = state => {
   return {
-    default: state.default,
+    loading: state.isLoading,
+    showResult: state.showResult,
     receivedInfo: state.receivedInfo,
     failure: state.isFailure
   };

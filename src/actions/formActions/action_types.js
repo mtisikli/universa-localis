@@ -1,4 +1,5 @@
 export const SUBMITTED = "SUBMITTED";
+export const LOADING = "LOADING";
 
 export const FETCH_SUCCESS = "FETCH_SUCCESS";
 export const FETCH_FAILURE = "FETCH_FAILURE";

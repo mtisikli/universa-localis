@@ -9,7 +9,6 @@ import Button from "@material-ui/core/Button";
 import { Animated } from "react-animated-css";
 import Toolbar from "@material-ui/core/Toolbar";
 import BottomNavigation from "@material-ui/core/BottomNavigation";
-import BottomNavigationAction from "@material-ui/core/BottomNavigationAction";
 
 const styles = {
   header: {
@@ -188,9 +187,6 @@ class StarmapResult extends Component {
           </div>
         </div>
         <BottomNavigation showLabels id="footer">
-          <BottomNavigationAction id="link" label="Home" href="/" />
-          <BottomNavigationAction id="link" label="About" href="about" />
-          <BottomNavigationAction id="link" label="Contact" href="contact" />
           <p id="copyright">© copyright Mehmet Tansu Işıklı</p>
         </BottomNavigation>
       </React.Fragment>
