@@ -207,6 +207,7 @@ export function techportFetch(receivedIds) {
         } else {
           image = data.project.library.libraryItem.files.file.url;
         }
+
         if (
           data.project.description === undefined ||
           data.project.endDate === undefined
