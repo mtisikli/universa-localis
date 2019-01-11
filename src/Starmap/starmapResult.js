@@ -111,7 +111,7 @@ class StarmapResult extends Component {
         <iframe
           className={classes.picture}
           title="skymap"
-          src="http://server7.sky-map.org/skywindow?object=alnitak&ra=5.59&de=-5.45&zoom=6&show_grid=1&show_constellation_lines=1&show_constellation_boundaries=1&show_const_names=0&show_galaxies=1&img_source=DSS2"
+          src="https://server7.sky-map.org/skywindow?object=alnitak&ra=5.59&de=-5.45&zoom=6&show_grid=1&show_constellation_lines=1&show_constellation_boundaries=1&show_const_names=0&show_galaxies=1&img_source=DSS2"
           width="750"
           height="600"
         />
