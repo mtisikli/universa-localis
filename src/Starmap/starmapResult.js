@@ -102,8 +102,8 @@ class StarmapResult extends Component {
           className={classes.picture}
           title="skymap"
           src={this.props.finalQuery}
-          width="750"
-          height="600"
+          width="100%"
+          height="500vh"
         />
       );
     } else {
@@ -111,9 +111,9 @@ class StarmapResult extends Component {
         <iframe
           className={classes.picture}
           title="skymap"
-          src="https://server7.sky-map.org/skywindow?object=alnitak&ra=5.59&de=-5.45&zoom=6&show_grid=1&show_constellation_lines=1&show_constellation_boundaries=1&show_const_names=0&show_galaxies=1&img_source=DSS2"
-          width="750"
-          height="600"
+          src="https://server7.sky-map.org/skywindow?object=alnitak&ra=5.59&de=-5.45&zoom=4&show_grid=1&show_constellation_lines=1&show_constellation_boundaries=1&show_const_names=0&show_galaxies=1&img_source=DSS2"
+          width="100%"
+          height="500vh"
         />
       );
     }
