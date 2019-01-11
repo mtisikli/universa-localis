@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import { connect } from "react-redux";
 import { Animated } from "react-animated-css";
 import Toolbar from "@material-ui/core/Toolbar";
 import Button from "@material-ui/core/Button";
@@ -10,7 +9,6 @@ import CardMedia from "@material-ui/core/CardMedia";
 import Typography from "@material-ui/core/Typography";
 import BottomNavigation from "@material-ui/core/BottomNavigation";
 import BottomNavigationAction from "@material-ui/core/BottomNavigationAction";
-import { getApod } from "./actions/formActions/actions";
 import "./App.css";
 
 class App extends Component {
@@ -78,8 +76,6 @@ class App extends Component {
                   image="https://apod.nasa.gov/apod/image/1812/GeminidAurora_Hansen1_960.jpg"
                   height="160"
                   title="Astronomy Picture"
-                  href="apod"
-                  onClick={this.props.getApod}
                 />
               </a>
               <CardContent className="action">
@@ -104,7 +100,6 @@ class App extends Component {
                   image="http://www.digitaltrends.com/wp-content/uploads/2012/08/curiosity-rover-lead.jpg"
                   height="160"
                   title="Mars Rover Photos"
-                  href="mrp"
                 />
               </a>
               <CardContent className="action">
@@ -227,15 +222,4 @@ class App extends Component {
   }
 }
 
-const mapDispatchToProps = dispatch => {
-  return {
-    getApod: () => {
-      dispatch(getApod());
-    }
-  };
-};
-
-export default connect(
-  null,
-  mapDispatchToProps
-)(App);
+export default App;

@@ -1,12 +1,21 @@
 import React from "react";
+import { withStyles } from "@material-ui/core/styles";
 import LinearProgress from "@material-ui/core/LinearProgress";
 
-function Loading() {
+const styles = theme => ({
+  root: {
+    width: "100vmax"
+  }
+});
+
+function Loading(props) {
+  const { classes } = props;
+
   return (
-    <div>
+    <div className={classes.root}>
       <LinearProgress color="secondary" />
     </div>
   );
 }
 
-export default Loading;
+export default withStyles(styles)(Loading);
