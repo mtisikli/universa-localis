@@ -278,7 +278,7 @@ export function getFinalQuery() {
     const state = getState().starForm;
     const star = "?object=" + state.starName;
 
-    const finalUrl = `http://server7.sky-map.org/skywindow${star}&ra=5.59&de=-5.45&zoom=6&show_grid=1&show_constellation_lines=1&show_constellation_boundaries=1&show_const_names=0&show_galaxies=1&img_source=DSS2`;
+    const finalUrl = `https://server7.sky-map.org/skywindow${star}&ra=5.59&de=-5.45&zoom=6&show_grid=1&show_constellation_lines=1&show_constellation_boundaries=1&show_const_names=0&show_galaxies=1&img_source=DSS2`;
     dispatch(updateUrl(finalUrl));
   };
 }
