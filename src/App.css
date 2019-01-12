@@ -15,10 +15,11 @@ body {
     #141e30
   ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
   background-size: cover;
+  background-attachment: fixed;
+  background-position: left top;
+  background-clip: border-box;
+  background-repeat: no-repeat;
   text-align: center;
   min-height: 100%;
   position: relative;
