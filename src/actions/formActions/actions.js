@@ -202,9 +202,9 @@ export function techportFetch(receivedIds) {
         let image;
         if (data.project.library === "") {
           image = null;
-        } else if (data.project.library.libraryItem.constructor === Array) {
+        } else if (data.project.library.libraryItem instanceof Array) {
           image = data.project.library.libraryItem[1].files.file.url;
-        } else {
+        } else if (data.project.library.libraryItem instanceof Object) {
           image = data.project.library.libraryItem.files.file.url;
         }
 

@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
 import PropTypes from "prop-types";
-import { getTechport } from "../actions/formActions/actions";
 import { withStyles } from "@material-ui/core/styles";
 import Button from "@material-ui/core/Button";
 import { Animated } from "react-animated-css";
@@ -78,9 +77,6 @@ const styles = {
   }
 };
 class TechportResult extends Component {
-  componentDidMount() {
-    this.props.dispatch(getTechport());
-  }
   render() {
     const { classes } = this.props;
 

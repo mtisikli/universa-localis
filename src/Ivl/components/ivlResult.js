@@ -36,16 +36,17 @@ const styles = {
     backgroundColor: "#e040fb"
   },
   all: {
+    margin: "0.1em",
     backgroundColor: "#212127d3",
     borderRadius: 30,
-    margin: "0.1em",
-    marginBottom: 50
+    marginBottom: 50,
+    width: "96vw"
   },
   year: {
     color: "#d8dcf2",
     fontFamily: "Quicksand",
     fontWeight: "bold",
-    fontSize: "2em",
+    fontSize: "3vmax",
     position: "relative",
     bottom: "1.5em"
   },
@@ -95,6 +96,7 @@ class ivlResult extends Component {
               i.data.map(u =>
                 u.media_type === "image" ? (
                   <IvlList
+                    key={i}
                     title={i.data.map(e =>
                       e.title.length < 100 ? e.title : null
                     )}

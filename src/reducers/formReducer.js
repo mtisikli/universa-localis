@@ -24,7 +24,6 @@ const initialState = {
   showResult: false,
   receivedInfo: {},
   finalQuery: "",
-  sdss: "",
   error: false,
   mrpForm: {
     name: "",
