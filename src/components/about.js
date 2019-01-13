@@ -207,7 +207,7 @@ class About extends Component {
                 Personal Website:{" "}
                 <a
                   className={classes.linkTexts}
-                  href="http://tansuisikli.space"
+                  href="https://mehmetisikli.space"
                   rel="noopener noreferrer"
                   target="_blank"
                 >
