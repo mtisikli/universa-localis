@@ -187,7 +187,7 @@ class StarmapResult extends Component {
           </div>
         </div>
         <BottomNavigation showLabels id="footer">
-          <p id="copyright">© copyright Mehmet Tansu Işıklı</p>
+          <p id="copyright">© copyright 2018 Mehmet Tansu Işıklı</p>
         </BottomNavigation>
       </React.Fragment>
     );

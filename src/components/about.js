@@ -280,7 +280,7 @@ class About extends Component {
         <BottomNavigation showLabels id="footer">
           <BottomNavigationAction id="link" label="Home" href="/" />
           <BottomNavigationAction id="link" label="Contact" href="contact" />
-          <p id="copyright">© copyright Mehmet Tansu Işıklı</p>
+          <p id="copyright">© copyright 2018 Mehmet Tansu Işıklı</p>
         </BottomNavigation>
       </React.Fragment>
     );
