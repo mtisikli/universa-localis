@@ -211,7 +211,7 @@ class About extends Component {
                   rel="noopener noreferrer"
                   target="_blank"
                 >
-                  tansuisikli.space
+                  mehmetisikli.space
                 </a>
               </p>
             </div>
